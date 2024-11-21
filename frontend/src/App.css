@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+.vkuiPanel--mode-none .vkuiPanel__in {
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: 'Roboto Slab', serif;
+}
+
+.vkuiPanelHeader__in {
+    background: none;
+}
+
+.vkuiGroup__separator-sibling:before, .vkuiSeparator__in {
+    background: none;
+}
+
+.vkuiCell__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    color: rgb(59, 80, 46);
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: -3px 3px 6px rgba(165, 202, 117, 1);
+}
+
+.panel {
+    overflow-x: hidden;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panel-header-text {
+    color: rgb(59, 80, 46);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.div-logo {
+    display: flex;
+    align-items: flex-end;
+    height: 150px;
+    gap: 30px;
+}
+
+.div-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.button {
+    width: 210px;
+    height: 50px;
+    background-color: #ed9c61;
+    border: solid 3px rgb(59, 80, 46);
+}
+
+.button-text {
+    color: rgb(59, 80, 46);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.button:hover {
+    background-color: rgba(165, 202, 117, 1);
+    border: solid 3px rgb(59, 80, 46);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.avatar {
+    border: solid 4px rgb(59, 80, 46);
+    margin-left: 15px;
+    box-shadow: 0px 0px 60px 0px rgba(165, 202, 117, 1);
+}
+
+.scroll-image {
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 45%;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(59, 80, 46);
+    font-size: 15px;
+    text-align: center;
+    text-shadow: -3px 3px 6px rgba(165, 202, 117, 1);
+}
+
+
+@media screen and (max-width: 600px) {
+    .scroll-image {
+        width: 350px;
+        margin-bottom: 90px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div-logo {
+        gap: 0px;
+    }
+
+    .overlay-text {
+        font-size: 13px;
+    }
+
+
+    .logo-image {
+        width: 200px;
+    }
+
+    .LeftCompass, .RightCompass {
+        width: 80px;
+    }
+}

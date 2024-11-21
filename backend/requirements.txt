@@ -1,0 +1,5 @@
+fastapi
+aiohttp
+python-dotenv
+uvicorn
+holidays
